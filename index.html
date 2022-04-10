@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TTS: Mapbox Play</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="./styles.css"></link>
+        </head>
+        <body>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+        <div class="flex-container">
+            <div id="map"></div>
+            <div id="data-window">
+                <h3>Data Window</h3>
+                <p>The data below will update as you interact with the map</p>
+                <div>
+                    <p>Zoom level: <span id="zoom-level">12</span></p>
+                    <p>Mouse position: <span id="mouse-position">0</span></p>
+                </div>
+                <p>Click on two different points on the map and click the button below to generate a route. Coordinates are displayed as long,lat</p>
+                <div class="route-list">
+                    <p>Starting Point: <span id="directions-start">unmarked</span></p>
+                    <p>End Point: <span id="directions-end">unmarked</span></p>
+                    <button id="build-route-btn">Build Route</button>
+                    <button id="reset-map-btn">Reset Map</button>
+                </div>
+            </div>
+        </div>
+         <script src="./script.js"></script>
+        </body>
+</html>

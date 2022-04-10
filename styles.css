@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  width: 60%;
+  cursor: crosshair;
+}
+
+#data-window{
+  float: left;
+  width: 40%;
+  padding: 0 6rem;
+}
+
+#data-window > div {
+  background-color: #f1f1f1;
+  margin: 6px 0;
+  padding: 20px;
+}
+
+#build-route-btn {
+  color: #f1f1f1;
+  background-color: #407094;
+  margin: auto;
+}
+
+.flex-container{
+display: flex;
+height: 100vh;
+}
